@@ -94,5 +94,5 @@ if __name__ == "__main__":
     for epoch in range(1, epochs + 1):
         train_the_model(model, train_loader, optimizer, mix_up, scaler, epoch)
         scheduler.step()
-    torch.save(model,f"TSCP_Vit_fc_{epochs}.pth")
+    torch.save(model,f"TSCP_Vit_fc_{epochs}_Food101.pth")
     print("Training complete and model saved.")
